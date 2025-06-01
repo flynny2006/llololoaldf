@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Details - Discord Token Dashboard</title>
+    <base href="/">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Server Details</h1>
+            <div class="header-buttons">
+                <a id="backBtn" class="back-btn">← Back to Servers</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="server-details-container">
+                <div class="server-header">
+                    <div class="server-icon-large">
+                        <img id="serverIcon" src="" alt="Server Icon">
+                    </div>
+                    <div class="server-title">
+                        <h2 id="serverName"></h2>
+                        <p id="serverId" class="server-id"></p>
+                    </div>
+                </div>
+
+                <div class="server-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <div class="stat-info">
+                            <h3>Members</h3>
+                            <p id="memberCount">Loading...</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-hashtag"></i>
+                        <div class="stat-info">
+                            <h3>Channels</h3>
+                            <p id="channelCount">Loading...</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-crown"></i>
+                        <div class="stat-info">
+                            <h3>Owner</h3>
+                            <p id="ownerName">Loading...</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <div class="stat-info">
+                            <h3>Created</h3>
+                            <p id="creationDate">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="server-sections">
+                    <div class="section">
+                        <h3>Server Information</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Region</span>
+                                <span id="serverRegion" class="info-value">Loading...</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Verification Level</span>
+                                <span id="verificationLevel" class="info-value">Loading...</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Content Filter</span>
+                                <span id="contentFilter" class="info-value">Loading...</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Boost Level</span>
+                                <span id="boostLevel" class="info-value">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h3>Quick Actions</h3>
+                        <div class="action-buttons">
+                            <button id="copyIdBtn" class="action-btn" title="Copy Server ID">
+                                <i class="fas fa-copy"></i>
+                                <span>Copy ID</span>
+                            </button>
+                            <button id="copyInviteBtn" class="action-btn" title="Copy Invite Link">
+                                <i class="fas fa-link"></i>
+                                <span>Copy Invite</span>
+                            </button>
+                            <button id="leaveServerBtn" class="action-btn danger" title="Leave Server">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Leave Server</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h3>Channels</h3>
+                        <div id="channelsList" class="channels-list">
+                            <!-- Channels will be listed here -->
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h3>Roles</h3>
+                        <div id="rolesList" class="roles-list">
+                            <!-- Roles will be listed here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/server.js"></script>
+</body>
+</html> 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Token Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Discord Token Dashboard</h1>
+            <div class="add-token">
+                <input type="text" id="newToken" placeholder="Enter Discord token">
+                <button onclick="addToken()">Add Token</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="tokens-container">
+                <div class="tokens-header">
+                    <h2>Token Status</h2>
+                    <button onclick="refreshTokens()" class="refresh-btn">Refresh</button>
+                </div>
+                <div id="tokensList" class="tokens-list">
+                    <!-- Tokens will be displayed here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

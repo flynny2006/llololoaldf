@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Servers - Discord Token Dashboard</title>
+    <base href="/">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Servers</h1>
+            <div class="header-buttons">
+                <button id="createServerBtn" class="create-server-btn">Create Server</button>
+                <a id="backBtn" class="back-btn">← Back to User</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="servers-container">
+                <div class="search-bar">
+                    <input type="text" id="serverSearch" placeholder="Search servers...">
+                </div>
+                
+                <div class="servers-grid" id="serversGrid">
+                    <!-- Servers will be displayed here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/servers.js"></script>
+</body>
+</html> 
